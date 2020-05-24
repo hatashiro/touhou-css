@@ -60,7 +60,8 @@ function startDrag(x, y) {
 const SENSITIVITY = .3;
 
 function handleDrag(x, y) {
-  if (!startingOffset) return;
+  if (!startingOffset || !startingRotation) return;
+
   const rotateZ = startingRotation.rotateZ + (startingOffset.x - x) * SENSITIVITY;
 
   //const rotateX = (startingOffset.y - y) * SENSITIVITY;
@@ -76,6 +77,7 @@ function handleDrag(x, y) {
 
 function finishDrag() {
   startingOffset = null;
+  startingRotation = null;
 }
 
 const mouse = (callback) => ({screenX, screenY}) => callback(screenX, screenY);
