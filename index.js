@@ -83,4 +83,5 @@ $scene.addEventListener('mouseup', finishDrag);
 const touch = (callback) => ({touches}) => callback(touches[0].screenX, touches[0].screenY);
 $scene.addEventListener('touchstart', touch(startDrag));
 $scene.addEventListener('touchmove', touch(handleDrag));
+$scene.addEventListener('touchmove', e => e.preventDefault()); // Scroll lock
 $scene.addEventListener('touchend', finishDrag);
