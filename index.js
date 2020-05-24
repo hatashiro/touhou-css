@@ -49,10 +49,8 @@ let startingRotation;
 function startDrag(x, y) {
   startingOffset = {x, y};
   const transform = $object.style.transform;
-  let mx = /rotateX\(([0-9.]+)deg\)/.exec(transform);
-  let mz = /rotateZ\(([0-9.]+)deg\)/.exec(transform);
+  let mz = /rotateZ\(([0-9.\-]+)deg\)/.exec(transform);
   startingRotation = {
-    rotateX: mx ? Number(mx[1]) : 0,
     rotateZ: mz ? Number(mz[1]) : 0,
   };
 }
@@ -64,9 +62,6 @@ function handleDrag(x, y) {
 
   const rotateZ = startingRotation.rotateZ + (startingOffset.x - x) * SENSITIVITY;
 
-  //const rotateX = (startingOffset.y - y) * SENSITIVITY;
-  // $object.style.transform = `rotateX(${startingRotation.rotateX + rotateX}deg) rotateZ(${startingRotation.rotateZ + rotateZ}deg)`;
-  //
   $object.style.transform = `rotateX(60deg) rotateZ(${rotateZ}deg)`;
 
   $characters.forEach(($char, idx) => {
