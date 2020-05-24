@@ -1,0 +1,78 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.scene {
+  cursor: grab;
+  perspective: 600px;
+  max-width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.scene:active {
+  cursor: grabbing;
+}
+
+.object {
+  position: relative;
+  width: 302px;
+  height: 302px;
+  margin: 20px auto;
+  transform-style: preserve-3d;
+  transform: rotateX(60deg);
+}
+
+.object > div {
+  position: absolute;
+}
+
+.board {
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #edd9c2;
+/*   transform: rotateX(60deg); */
+}
+
+.cell {
+  width: 50%;
+  height: 50%;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.cell .char {
+  transform: translate(50px, 50px) translateZ(48px) rotateX(-60deg) scale(2.3);
+}
+
+.board-base {
+  width: 298px;
+  height: 40px;
+  background: #edd9c2;
+  border: 2px solid black;
+}
+
+.board-base:nth-child(2) {
+  transform: rotateX(90deg) translate3d(0, -22px, 22px);
+}
+
+.board-base:nth-child(3) {
+  transform: rotateX(90deg) rotateY(90deg) translate3d(129px, -22px, -151px)
+}
+
+.board-base:nth-child(4) {
+  transform: rotateX(90deg) rotateY(90deg) translate3d(129px, -22px, 151px)
+}
+
+.board-base:nth-child(5) {
+  transform: rotateX(90deg) translate3d(0, -22px, -280px);
+}
+
+button {
+  font-size: 20px;
+  border: 1px solid black;
+}

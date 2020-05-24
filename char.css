@@ -1,0 +1,359 @@
+.char {
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  background-image: url(./touhou.png);
+  animation: none 1s steps(1) infinite;
+}
+
+/******************************
+ * Reimu                      *
+ ******************************/
+
+.char.reimu.down {
+  animation-name: reimu-down;
+}
+@keyframes reimu-down {
+  0%  { background-position: -48px  0px }
+  25% { background-position: 0px    0px }
+  50% { background-position: -48px  0px }
+  75% { background-position: -96px  0px }
+}
+
+.char.reimu.left {
+  animation-name: reimu-left;
+}
+@keyframes reimu-left {
+  0%  { background-position: -48px  -48px }
+  25% { background-position: 0px    -48px }
+  50% { background-position: -48px  -48px }
+  75% { background-position: -96px  -48px }
+}
+
+.char.reimu.right {
+  animation-name: reimu-right;
+}
+@keyframes reimu-right {
+  0%  { background-position: -48px  -96px }
+  25% { background-position: 0px    -96px }
+  50% { background-position: -48px  -96px }
+  75% { background-position: -96px  -96px }
+}
+
+.char.reimu.up {
+  animation-name: reimu-up;
+}
+@keyframes reimu-up {
+  0%  { background-position: -48px  -144px }
+  25% { background-position: 0px    -144px }
+  50% { background-position: -48px  -144px }
+  75% { background-position: -96px  -144px }
+}
+
+/******************************
+ * Marisa                     *
+ ******************************/
+
+.char.marisa.down {
+  animation-name: marisa-down;
+}
+@keyframes marisa-down {
+  0%  { background-position: -192px  0px }
+  25% { background-position: -144px  0px }
+  50% { background-position: -192px  0px }
+  75% { background-position: -240px  0px }
+}
+
+.char.marisa.left {
+  animation-name: marisa-left;
+}
+@keyframes marisa-left {
+  0%  { background-position: -192px  -48px }
+  25% { background-position: -144px  -48px }
+  50% { background-position: -192px  -48px }
+  75% { background-position: -240px  -48px }
+}
+
+.char.marisa.right {
+  animation-name: marisa-right;
+}
+@keyframes marisa-right {
+  0%  { background-position: -192px  -96px }
+  25% { background-position: -144px  -96px }
+  50% { background-position: -192px  -96px }
+  75% { background-position: -240px  -96px }
+}
+
+.char.marisa.up {
+  animation-name: marisa-up;
+}
+@keyframes marisa-up {
+  0%  { background-position: -192px  -144px }
+  25% { background-position: -144px  -144px }
+  50% { background-position: -192px  -144px }
+  75% { background-position: -240px  -144px }
+}
+
+/******************************
+ * Sanae                      *
+ ******************************/
+
+.char.sanae.down {
+  animation-name: sanae-down;
+}
+@keyframes sanae-down {
+  0%  { background-position: -336px  0px }
+  25% { background-position: -288px  0px }
+  50% { background-position: -336px  0px }
+  75% { background-position: -384px  0px }
+}
+
+.char.sanae.left {
+  animation-name: sanae-left;
+}
+@keyframes sanae-left {
+  0%  { background-position: -336px  -48px }
+  25% { background-position: -288px  -48px }
+  50% { background-position: -336px  -48px }
+  75% { background-position: -384px  -48px }
+}
+
+.char.sanae.right {
+  animation-name: sanae-right;
+}
+@keyframes sanae-right {
+  0%  { background-position: -336px  -96px }
+  25% { background-position: -288px  -96px }
+  50% { background-position: -336px  -96px }
+  75% { background-position: -384px  -96px }
+}
+
+.char.sanae.up {
+  animation-name: sanae-up;
+}
+@keyframes sanae-up {
+  0%  { background-position: -336px  -144px }
+  25% { background-position: -288px  -144px }
+  50% { background-position: -336px  -144px }
+  75% { background-position: -384px  -144px }
+}
+
+/******************************
+ * Youmu                      *
+ ******************************/
+
+.char.youmu.down {
+  animation-name: youmu-down;
+}
+@keyframes youmu-down {
+  0%  { background-position: -480px  0px }
+  25% { background-position: -432px  0px }
+  50% { background-position: -480px  0px }
+  75% { background-position: -528px  0px }
+}
+
+.char.youmu.left {
+  animation-name: youmu-left;
+}
+@keyframes youmu-left {
+  0%  { background-position: -480px  -48px }
+  25% { background-position: -432px  -48px }
+  50% { background-position: -480px  -48px }
+  75% { background-position: -528px  -48px }
+}
+
+.char.youmu.right {
+  animation-name: youmu-right;
+}
+@keyframes youmu-right {
+  0%  { background-position: -480px  -96px }
+  25% { background-position: -432px  -96px }
+  50% { background-position: -480px  -96px }
+  75% { background-position: -528px  -96px }
+}
+
+.char.youmu.up {
+  animation-name: youmu-up;
+}
+@keyframes youmu-up {
+  0%  { background-position: -480px  -144px }
+  25% { background-position: -432px  -144px }
+  50% { background-position: -480px  -144px }
+  75% { background-position: -528px  -144px }
+}
+
+/******************************
+ * Sakuya                     *
+ ******************************/
+
+.char.sakuya.down {
+  animation-name: sakuya-down;
+}
+@keyframes sakuya-down {
+  0%  { background-position: -48px  -192px }
+  25% { background-position: 0px    -192px }
+  50% { background-position: -48px  -192px }
+  75% { background-position: -96px  -192px }
+}
+
+.char.sakuya.left {
+  animation-name: sakuya-left;
+}
+@keyframes sakuya-left {
+  0%  { background-position: -48px  -240px }
+  25% { background-position: 0px    -240px }
+  50% { background-position: -48px  -240px }
+  75% { background-position: -96px  -240px }
+}
+
+.char.sakuya.right {
+  animation-name: sakuya-right;
+}
+@keyframes sakuya-right {
+  0%  { background-position: -48px  -288px }
+  25% { background-position: 0px    -288px }
+  50% { background-position: -48px  -288px }
+  75% { background-position: -96px  -288px }
+}
+
+.char.sakuya.up {
+  animation-name: sakuya-up;
+}
+@keyframes sakuya-up {
+  0%  { background-position: -48px  -336px }
+  25% { background-position: 0px    -336px }
+  50% { background-position: -48px  -336px }
+  75% { background-position: -96px  -336px }
+}
+
+/******************************
+ * Reisen                     *
+ ******************************/
+
+.char.reisen.down {
+  animation-name: reisen-down;
+}
+@keyframes reisen-down {
+  0%  { background-position: -192px  -192px }
+  25% { background-position: -144px  -192px }
+  50% { background-position: -192px  -192px }
+  75% { background-position: -240px  -192px }
+}
+
+.char.reisen.left {
+  animation-name: reisen-left;
+}
+@keyframes reisen-left {
+  0%  { background-position: -192px  -240px }
+  25% { background-position: -144px  -240px }
+  50% { background-position: -192px  -240px }
+  75% { background-position: -240px  -240px }
+}
+
+.char.reisen.right {
+  animation-name: reisen-right;
+}
+@keyframes reisen-right {
+  0%  { background-position: -192px  -288px }
+  25% { background-position: -144px  -288px }
+  50% { background-position: -192px  -288px }
+  75% { background-position: -240px  -288px }
+}
+
+.char.reisen.up {
+  animation-name: reisen-up;
+}
+@keyframes reisen-up {
+  0%  { background-position: -192px  -336px }
+  25% { background-position: -144px  -336px }
+  50% { background-position: -192px  -336px }
+  75% { background-position: -240px  -336px }
+}
+
+/******************************
+ * Aya                        *
+ ******************************/
+
+.char.aya.down {
+  animation-name: aya-down;
+}
+@keyframes aya-down {
+  0%  { background-position: -336px  -192px }
+  25% { background-position: -288px  -192px }
+  50% { background-position: -336px  -192px }
+  75% { background-position: -384px  -192px }
+}
+
+.char.aya.left {
+  animation-name: aya-left;
+}
+@keyframes aya-left {
+  0%  { background-position: -336px  -240px }
+  25% { background-position: -288px  -240px }
+  50% { background-position: -336px  -240px }
+  75% { background-position: -384px  -240px }
+}
+
+.char.aya.right {
+  animation-name: aya-right;
+}
+@keyframes aya-right {
+  0%  { background-position: -336px  -288px }
+  25% { background-position: -288px  -288px }
+  50% { background-position: -336px  -288px }
+  75% { background-position: -384px  -288px }
+}
+
+.char.aya.up {
+  animation-name: aya-up;
+}
+@keyframes aya-up {
+  0%  { background-position: -336px  -336px }
+  25% { background-position: -288px  -336px }
+  50% { background-position: -336px  -336px }
+  75% { background-position: -384px  -336px }
+}
+
+/******************************
+ * Chiruno                    *
+ ******************************/
+
+.char.chiruno.down {
+  animation-name: chiruno-down;
+}
+@keyframes chiruno-down {
+  0%  { background-position: -480px  -192px }
+  25% { background-position: -432px  -192px }
+  50% { background-position: -480px  -192px }
+  75% { background-position: -528px  -192px }
+}
+
+.char.chiruno.left {
+  animation-name: chiruno-left;
+}
+@keyframes chiruno-left {
+  0%  { background-position: -480px  -240px }
+  25% { background-position: -432px  -240px }
+  50% { background-position: -480px  -240px }
+  75% { background-position: -528px  -240px }
+}
+
+.char.chiruno.right {
+  animation-name: chiruno-right;
+}
+@keyframes chiruno-right {
+  0%  { background-position: -480px  -288px }
+  25% { background-position: -432px  -288px }
+  50% { background-position: -480px  -288px }
+  75% { background-position: -528px  -288px }
+}
+
+.char.chiruno.up {
+  animation-name: chiruno-up;
+}
+@keyframes chiruno-up {
+  0%  { background-position: -480px  -336px }
+  25% { background-position: -432px  -336px }
+  50% { background-position: -480px  -336px }
+  75% { background-position: -528px  -336px }
+}
